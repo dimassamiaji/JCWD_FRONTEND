@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Man With a Mission</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: 20px;
+        font-family: sans-serif;
+      }
+
+      .navbar {
+        background-color: black;
+        display: flex;
+        justify-content: space-between;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+      }
+      .flex {
+        display: flex;
+        margin-left: 20px;
+      }
+      .kiri {
+        gap: 10px;
+        margin-left: 10px;
+      }
+
+      .kanan {
+        gap: 10px;
+        margin-right: 10px;
+      }
+      a {
+        text-decoration: none;
+        color: whitesmoke;
+        font-weight: 500;
+        padding: 12px 24px;
+      }
+      a:hover {
+        color: black;
+        background-color: #cbcbcb;
+      }
+
+      .image-container {
+        justify-content: center;
+        display: flex;
+        align-items: end;
+      }
+
+      .image-container img {
+        max-width: 2000px;
+        width: 100%;
+        object-fit: contain;
+        max-height: 1000px;
+      }
+      .overlay-text {
+        position: absolute;
+        color: white;
+        text-align: center;
+        padding: 32px 16px;
+      }
+
+      i {
+        color: #666666;
+      }
+      .content {
+        padding: 64px 16px;
+        max-width: 768px;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+      }
+      .content h1 {
+        color: black;
+      }
+      .content p {
+        text-align: justify;
+        line-height: 1.5;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        padding: 32px 0px;
+      }
+
+      .grid-item img {
+        max-width: 200px;
+        aspect-ratio: 1;
+        border-radius: 4px;
+        object-fit: cover;
+        overflow: hidden;
+      }
+
+      .grid-container p {
+        text-align: center;
+      }
+
+      .background-content {
+        background-color: black;
+        padding: 64px 16px;
+        max-width: 1800px;
+        width: 100%;
+        max-height: 1000px;
+        /* text-align: center; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        margin: auto;
+        text-align: center;
+      }
+      .background-content h1 {
+        color: white;
+      }
+
+      .background-content i {
+        color: #777;
+        font-style: italic;
+      }
+
+      .content-tour {
+        padding: 64px 16px;
+        max-width: 900px;
+        width: 100%;
+        text-align: left;
+        /* display: flex; */
+        /* flex-direction: column; */
+        margin: auto;
+      }
+
+      .content-border {
+        border: #cbcbcb;
+      }
+
+      ul.content-border {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .border-item {
+        border: 1px solid #ddd;
+        margin: 0;
+        padding: 10px;
+        color: black;
+        text-align: left;
+        background-color: white;
+      }
+
+      .border-tag {
+        color: #ff0000; /* Warna merah untuk tag "Sold Out" atau jumlah tiket */
+        font-weight: bold;
+      }
+
+      .grid-loctour {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 10px;
+      }
+      .grid-itemloctour img {
+        max-width: 300px;
+        aspect-ratio: 1;
+        border-radius: 4px;
+        object-fit: cover;
+        text-align: left;
+        /* overflow: hidden; */
+      }
+      .grid-itemloctour h2 {
+        color: white;
+      }
+      .grid-itemloctour p1 {
+        color: white;
+      }
+      .grid-itemloctour p2 {
+        color: white;
+      }
+      .grid-itemloctour p3 {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <div class="flex kiri">
+        <a href="">HOME</a>
+        <a href="">BAND</a>
+        <a href="">TOUR</a>
+        <a href="">CONTACT</a>
+        <a href="">MORE</a>
+      </div>
+      <div class="flex kanan">
+        <a href="">SEARCH</a>
+      </div>
+    </div>
+
+    <!-- banner -->
+    <div class="image-container">
+      <img src="peakpx (1).jpg" />
+      <div class="overlay-text">
+        <h2>WOLVES ON PARADE</h2>
+        <p>Asia Mission : Jakarta</p>
+      </div>
+    </div>
+
+    <!-- isi content -->
+    <div class="content">
+      <h1>Man With a Mission</h1>
+      <i>Ultimate Life Form</i>
+      <p>
+        Man with a Mission, stylized in all caps and sometimes shortened as
+        MWAM, is a Japanese rock band which was formed in Shibuya, Tokyo, Japan,
+        in 2010. The band currently consists of five band members, with stage
+        names of Tokyo Tanaka (vocals, leader), Jean-Ken Johnny (guitar, vocals,
+        rap), Kamikaze Boy (bass guitar, backing vocals), DJ Santa Monica (DJ,
+        sampling) and Spear Rib (drums).Before becoming popular, the band
+        invented a back-story for why they wear wolf masks, which involves them
+        being created as the "Ultimate Life Form" by Jimi Hendrix, who is
+        described by the band as being the doctor of the guitar and master wolf
+        biologist.They were then frozen in Antarctica for years. While they were
+        frozen, they had been listening to all kinds of music from all around
+        the world, before later escaping and emerging onto the Japanese music
+        scene.
+      </p>
+
+      <!-- member -->
+      <div class="grid-container">
+        <div class="grid-item">
+          <p>Tokyo Tanaka</p>
+          <img src="content_M0285_3.jpg" style="width: 70%" alt="" />
+        </div>
+        <div class="grid-item">
+          <p>JeanKen Johnny</p>
+          <img
+            src="FENDER-NEWS-VOL.2-2018-JEAN-KEN-JOHNNY-004.jpg"
+            style="width: 70%"
+            alt=""
+          />
+        </div>
+        <div class="grid-item">
+          <p>Kamikaze Boy</p>
+          <img src="F0KvJhIXwAM2Tdj.jpeg" style="width: 70%" alt="" />
+        </div>
+        <div class="grid-item">
+          <p>Spear Rib</p>
+          <img src="a_main_SpearRib.jpg" style="width: 70%" alt="" />
+        </div>
+        <div class="grid-item">
+          <p>Dj Santa Monica</p>
+          <img src="20210507222031.jpg" style="width: 70%" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- content tour -->
+
+    <div class="background-content">
+      <h1>TOUR DATES</h1>
+      <i>Remember to book your tickets</i>
+      <br />
+      <div class="content-tour">
+        <ul class="content-border">
+          <li class="border-item">
+            October
+            <span class="border-tag"> Sold Out</span>
+          </li>
+          <li class="border-item">
+            November
+            <span class="border-tag"> Sold Out</span>
+          </li>
+          <li class="border-item">
+            December
+            <span class="border-tag"></span>
+          </li>
+        </ul>
+        <br />
+        <!-- location tour -->
+        <div class="grid-locTour">
+          <div class="grid-itemloctour">
+            <img
+              src="https://jakarta-tourism.sgp1.cdn.digitaloceanspaces.com/home/welcome/TTlFgtlC4VUjSOzBzEnHwwLeOCh1bE-metaUXNSNGpmZE5yTTlsQTU0ZHpTY2lPcmh6OXV0bmMyOFBIQVRKYzR5VS5qcGc=-.jpg"
+              style="width: 70%"
+              alt=""
+            />
+            <h2>Jakarta</h2>
+            <p1>27 September 2023</p1>
+            <br />
+            <p2>The Kasablanka Hall</p2>
+            <br />
+            <p3>Buy Tickets</p3>
+          </div>
+          <div class="grid-itemloctour">
+            <img
+              src="https://cdnwpedutorenews.gramedia.net/wp-content/uploads/2023/05/24141927/singapura-2.png"
+              style="width: 70%"
+              alt=""
+            />
+            <h2>Singapura</h2>
+            <p1>29 September 2023</p1>
+            <br />
+            <p2>Capitol Theatre</p2>
+            <br />
+            <p3>Buy Tickets</p3>
+          </div>
+          <div class="grid-itemloctour">
+            <img
+              src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_800,h_538/w_49,x_9,y_9,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/dnitbhes5rxwsdzpvquo/BusSingapura-KualaLumpurSunwayLagoon.webp"
+              style="width: 70%"
+              alt=""
+            />
+            <h2>Kuala Lumpur</h2>
+            <p1>01 October 2023</p1>
+            <br />
+            <p2>Zepp Kuala Lumpur</p2>
+            <br />
+            <p3>Buy Tickets</p3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

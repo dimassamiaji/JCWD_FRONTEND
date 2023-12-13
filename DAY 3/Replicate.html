@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Grid dengan Gambar dan Deskripsi</title>
+  </head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .grid-item {
+      border: 1px solid #ddd;
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin: 0;
+    }
+  </style>
+  <body>
+    <div class="image-grid">
+      <div class="grid-item">
+        <img src="gambar1.jpg" alt="Deskripsi Gambar 1" />
+        <p>Deskripsi Gambar 1</p>
+      </div>
+      <div class="grid-item">
+        <img src="gambar2.jpg" alt="Deskripsi Gambar 2" />
+        <p>Deskripsi Gambar 2</p>
+      </div>
+      <div class="grid-item">
+        <img src="gambar3.jpg" alt="Deskripsi Gambar 3" />
+        <p>Deskripsi Gambar 3</p>
+      </div>
+      <!-- Tambahkan lebih banyak grid-item sesuai kebutuhan -->
+    </div>
+  </body>
+</html>
