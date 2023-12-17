@@ -1,5 +1,5 @@
 import "./App.css";
-import {
+import ColorArrayComponent, {
   P10Components,
   P1Components,
   P2Components,
@@ -28,6 +28,7 @@ function App() {
       <P8Components />
       <P9Components />
       <P10Components />
+      <ColorArrayComponent/>
     </>
   );
 }
