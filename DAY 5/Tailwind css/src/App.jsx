@@ -1,6 +1,9 @@
 import "./App.css";
-import ColorArrayComponent, {
+import {
+  LoopComponent,
   P10Components,
+  P11Components,
+  P12Components,
   P1Components,
   P2Components,
   P3Components,
@@ -14,7 +17,7 @@ import ColorArrayComponent, {
 import NavbarComponents from "./components/navbar";
 
 export default function App() {
-  const arr = [
+  const arrColor = [
     "red",
     "slate",
     "yellow",
@@ -26,16 +29,16 @@ export default function App() {
     "gray",
     "cyan",
   ];
-  const arr2 = [
+  const arrColor2 = [
     "red-600",
     "slate-500",
-    " yellow-500",
+    "yellow-500",
     "orange-400",
     "blue-200",
     "blue-500",
     "red-300",
     "yellow-700",
-    "ray-400",
+    "gray-400",
     "cyan-200",
   ];
 
@@ -54,14 +57,17 @@ export default function App() {
       <P9Components />
       <P10Components />
       <h1>LOOP component</h1>
-      {arr.map((color, idx) => (
-        <ColorArrayComponent bgColor={color} key={idx} />
+      {arrColor.map((color, idx) => (
+        <P11Components bgColor={color} key={idx} />
       ))}
 
-      <h1>ini tailwind</h1>
-      {arr2.map((color, idx) => (
-        <ColorArrayComponent bgColor={color} key={idx} />
+      <h1>ini pake tailwind</h1>
+      {arrColor2.map((color, idx) => (
+        <P12Components bgColor={color} key={idx} />
       ))}
+
+      <h1>ini pake loop component</h1>
+      <LoopComponent arr={arrColor} />
     </>
   );
 }

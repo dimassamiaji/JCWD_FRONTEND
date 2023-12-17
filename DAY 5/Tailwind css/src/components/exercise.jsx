@@ -38,19 +38,21 @@ export function P10Components() {
   return <div className=" bg-cyan-200 py-6">Page 10 </div>;
 }
 
-function ColorArrayComponent({ arrColor }) {
+export function P11Components({ bgColor, value }) {
+  return <div style={{ backgroundColor: bgColor, padding: "16" }}>{value}</div>;
+}
+
+export function P12Components({ bgColor }) {
+  return <div className={`bg-${bgColor} p-4`}> </div>;
+}
+
+export function LoopComponent({ arr }) {
   return (
     <div>
-      <h1>Array of Colors</h1>
-      {arrColor.map((val, idx) => (
-        <LoopComponents key={idx} val={val} />
-      ))}
+      {arr?.map((color, idx) => {
+        const plus = "Woy " + (idx + 1);
+        return <P11Components bgColor={color} key={idx} value={plus} />;
+      })}
     </div>
   );
 }
-
-function LoopComponents(val) {
-  return <div style={{ backgroundColor: val, padding: "16px" }}>here </div>;
-}
-
-export default ColorArrayComponent;
