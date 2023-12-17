@@ -38,25 +38,11 @@ export function P10Components() {
   return <div className=" bg-cyan-200 py-6">Page 10 </div>;
 }
 
-function ColorArrayComponent({ colorArray }) {
-  // Array of string warna
-  const colorArray = [
-    "red",
-    "slate",
-    "yellow",
-    "orange",
-    "blue",
-    "blue",
-    "red",
-    "yellow",
-    "gray",
-    "cyan",
-  ];
-
+function ColorArrayComponent({ arrColor }) {
   return (
     <div>
       <h1>Array of Colors</h1>
-      {colorArray.map((val, idx) => (
+      {arrColor.map((val, idx) => (
         <LoopComponents key={idx} val={val} />
       ))}
     </div>
