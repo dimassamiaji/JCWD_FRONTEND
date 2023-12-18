@@ -38,20 +38,20 @@ export function P10Components() {
   return <div className=" bg-cyan-200 py-6">Page 10 </div>;
 }
 
-export function P11Components({ bgColor, value }) {
-  return <div style={{ backgroundColor: bgColor, padding: "16" }}>{value}</div>;
-}
+// export function P11Components({ bgColor, value }) {
+//   return <div style={{ backgroundColor: bgColor, padding: "16" }}>{value}</div>;
+// }
 
-export function P12Components({ bgColor }) {
-  return <div className={`bg-${bgColor} p-4`}> </div>;
+export function P11Components({ bgColor, value }) {
+  return <div className={`bg-${bgColor} p-4`}>{value}</div>;
 }
 
 export function LoopComponent({ arr }) {
   return (
     <div>
       {arr?.map((color, idx) => {
-        const plus = "Woy " + (idx + 1);
-        return <P11Components bgColor={color} key={idx} value={plus} />;
+        const test = "Testing " + (idx + 1);
+        return <P11Components bgColor={color} key={idx} value={test} />;
       })}
     </div>
   );
