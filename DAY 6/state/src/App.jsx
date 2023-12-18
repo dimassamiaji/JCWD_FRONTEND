@@ -1,13 +1,18 @@
 import "./App.css";
-import { Routes } from "./routes/routes";
+import NavbarComponents from "./components/navbar";
+import { routes, routes2 } from "./routes/routes";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <Routes>
-      {routes.map((route, key) => (
-        <Routes {...route} key={key} />
-      ))}
-    </Routes>
+    <>
+      <NavbarComponents />
+      <Routes>
+        {routes.map((route, key) => (
+          <Route {...route} key={key} />
+        ))}
+      </Routes>
+    </>
   );
 }
 
