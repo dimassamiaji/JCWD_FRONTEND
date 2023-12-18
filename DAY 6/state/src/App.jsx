@@ -1,13 +1,13 @@
 import "./App.css";
-import {} from "react-router-dom";
+import { Routes } from "./routes/routes";
 
 function App() {
   return (
-    <>
-      <Routes>
-
-      </Routes>
-    </>
+    <Routes>
+      {Routes.map((route, key) => (
+        <Route {...route} key={key} />
+      ))}
+    </Routes>
   );
 }
 

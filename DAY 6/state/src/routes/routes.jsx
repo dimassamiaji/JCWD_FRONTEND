@@ -1,7 +1,7 @@
 import CalculatorPage from "../pages/calculator";
 import HomePage from "../pages/home";
 
-export const Routes = [
+export const routes = [
   { element: <HomePage />, path: "/" },
   { element: <CalculatorPage />, path: "/calculator" },
 ];
@@ -13,4 +13,7 @@ class RouteClass {
   }
 }
 
-export const routes2 = [new RouteClass(<HomePage />, "/"), new RouteClass];
+export const routes2 = [
+  new RouteClass(<HomePage />, "/"),
+  new RouteClass(<CalculatorPage />, "/calculator"),
+];
