@@ -1,9 +1,12 @@
+import Search from "../assets/search.png";
+import Logo from "../assets/Logo.png";
+
 function NavbarComponents() {
   return (
     <nav>
       <div className="search">
         <span>
-          <img src="./search.png" alt="" />
+          <img src={Search} alt="" />
         </span>
         <input type="text" placeholder="Type any products here" />
       </div>
@@ -11,13 +14,13 @@ function NavbarComponents() {
         <div>Sneakers</div>
         <div>Apparel</div>
         <div>
-          <img src="./ka-logo-black.e598ee3d.png" alt="logo" />
+          <img src={Logo} alt="logo" />
         </div>
         <div>Luxury</div>
         <div>Electronics & Collectibles</div>
       </div>
       <div id="logo">
-        <img src="./ka-logo-black.e598ee3d.png" alt="logo" width="100%" />
+        <img src={Logo} alt="logo" width="100%" />
       </div>
       <div className="auth">
         <div>Login</div>
