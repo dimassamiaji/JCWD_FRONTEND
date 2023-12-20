@@ -1,12 +1,34 @@
-import { useState } from "react";
 import { products } from "../database/data.json";
+import { useState, useEffect } from "react";
 import CardListComponents from "../components/Cardlist";
+import NavbarComponent from "../components/Navbar";
 
 function HomePage() {
-  const [data, setdata] = useState([...products]);
+  const [data, setData] = useState([...products]);
+  const [filtered, setFiltered] = useState([...products]);
+
+  const [search, setSearch] = useState("");
+
+  const filter = () => {
+    console.log(data);
+    const filtered = data.filter((product) =>
+      product.productName.toLowerCase().includes(search.toLowerCase())
+    );
+    setFiltered(filtered);
+  };
+
+  useEffect(() => {
+    filter();
+  }, [search, data]);
+  //component did update
   return (
     <>
-      <CardListComponents products={data} setProducts={setdata} />
+      <NavbarComponent setSearch={setSearch} />
+      <CardListComponents
+        products={filtered}
+        search={search}
+        setProducts={setData}
+      />
     </>
   );
 }

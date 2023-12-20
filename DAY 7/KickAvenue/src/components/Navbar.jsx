@@ -1,14 +1,18 @@
 import Search from "../assets/search.png";
 import Logo from "../assets/Logo.png";
-
-function NavbarComponents() {
+import { useState } from "react";
+function NavbarComponent({ setSearch }) {
   return (
     <nav>
       <div className="search">
         <span>
           <img src={Search} alt="" />
         </span>
-        <input type="text" placeholder="Type any products here" />
+        <input
+          onChange={(e) => setSearch(e.target.value)}
+          type="text"
+          placeholder="Type any products here"
+        />
       </div>
       <div className="menus">
         <div>Sneakers</div>
@@ -22,6 +26,7 @@ function NavbarComponents() {
       <div id="logo">
         <img src={Logo} alt="logo" width="100%" />
       </div>
+
       <div className="auth">
         <div>Login</div>
         <div>Register</div>
@@ -29,4 +34,4 @@ function NavbarComponents() {
     </nav>
   );
 }
-export default NavbarComponents;
+export default NavbarComponent;

@@ -1,21 +1,22 @@
-import { Button, Flex, useDisclosure } from "@chakra-ui/react";
-import ProductModalComponent from "./Modal";
+import { Flex, Button, useDisclosure } from "@chakra-ui/react";
+import ProductModalComponent from "./modal";
 
 function CardListComponents({ products, setProducts }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
+
   return (
     <>
       <div className="content">
         {products.map((product, key) => (
-          <CardComponent key={key} {...product} />
+          <CardComponent key={key} {...product} setProducts={setProducts} />
         ))}
         <Flex
-          pos={"fixed"}
-          bottom={0}
-          w={"100%"}
           maxW={"984px"}
+          w={"100%"}
           justifyContent={"right"}
           padding={"30px"}
+          pos={"fixed"}
+          bottom={0}
         >
           <Button
             borderRadius={"100%"}
@@ -28,25 +29,35 @@ function CardListComponents({ products, setProducts }) {
             Add
           </Button>
         </Flex>
-        <ProductModalComponent
-          isOpen={isOpen}
-          onClose={onClose}
-          setProducts={setProducts}
-        />
       </div>
+      <ProductModalComponent
+        isOpen={isOpen}
+        onClose={onClose}
+        setProducts={setProducts}
+      />
     </>
   );
 }
 export default CardListComponents;
 
-function CardComponent({ img, productName, price }) {
+function CardComponent({ img, productName, price, setProducts }) {
+  const { isOpen, onOpen, onClose } = useDisclosure();
+
   return (
-    <div className="card">
-      <img src={img} alt="" />
-      <div className="wrapper">
-        <h2>{productName}</h2>
-        <span> IDR {Number(price).toLocaleString("id-ID")}</span>
+    <>
+      <div className="card" onClick={onOpen}>
+        <img src={img} alt="" />
+        <div className="wrapper">
+          <h2>{productName}</h2>
+          <span> IDR {Number(price).toLocaleString("id-ID")} </span>
+        </div>
       </div>
-    </div>
+      <ProductModalComponent
+        isOpen={isOpen}
+        onClose={onClose}
+        setProducts={setProducts}
+        product={{ productName, img, price }}
+      />
+    </>
   );
 }
