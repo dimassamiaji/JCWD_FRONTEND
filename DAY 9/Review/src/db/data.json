@@ -13,10 +13,16 @@
       "name": "wiwi"
     },
     {
-      "id": "b2c2",
-      "email": "ganjar@mail.com",
-      "password": 1345,
-      "name": "new"
+      "id": "3",
+      "email": "wewe@gmail.com",
+      "password": "12345",
+      "name": "wewe"
+    },
+    {
+      "id": "c21c",
+      "name": "dims",
+      "email": "dims@gmail.com",
+      "password": "123"
     }
   ]
 }

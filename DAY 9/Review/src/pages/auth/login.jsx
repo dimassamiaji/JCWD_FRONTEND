@@ -1,4 +1,39 @@
+import axios from "axios";
+import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import { functionLogin } from "../../redux/slice/userSlice";
+import { axiosInstance } from "../../api/axios";
+
 function LoginPage() {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+
+  const login = () => {
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+
+    axiosInstance()
+      .get("/users", {
+        params: { email, password },
+      })
+      .then((res) => {
+        if (res.data?.length) {
+          const { name } = res.data[0];
+          alert("welcome " + name);
+          delete res.data[0]?.password;
+          dispatch(functionLogin(...res.data));
+
+          localStorage.setItem("user", res.data[0].id);
+
+          navigate("/");
+        } else {
+          alert("user not found");
+        }
+        console.log(res.data);
+      })
+      .catch((err) => console.log(err));
+  };
+
   return (
     <>
       <div className="flex justify-center items-center min-h-screen">
@@ -27,9 +62,9 @@ function LoginPage() {
 
           <button
             className=" rounded-lg mt-5 text-white bg-[#4F46E5] h-16"
-            // onClick={mendaftar}
+            onClick={login}
           >
-            Mendaftar
+            login
           </button>
         </div>
       </div>

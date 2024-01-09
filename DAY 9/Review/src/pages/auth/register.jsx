@@ -1,5 +1,6 @@
-import { document } from "postcss";
+import axios from "axios";
 import { useState } from "react";
+import { axiosInstance } from "../../api/axios";
 
 function RegisterPage() {
   const [user, setUser] = useState({
@@ -19,13 +20,18 @@ function RegisterPage() {
     });
   };
 
-  // const mendaftar = () => {
-  //   const name = document.getElementById{"name"}.value;
-  //   const email = document.getElementById{"email"}.value;
-  //   const password = document.getElementById{"password"}.value;
-  // };
-
-  // console.log(name, email, password);
+  const mendaftar = () => {
+    if (user.name && user.password && user.email) {
+      axiosInstance()
+        .post("/users", user)
+        .then((res) => {
+          console.log(res.data);
+          setUser({ name: "", email: "", password: "" });
+          alert("register berhasil");
+        })
+        .catch((err) => console.log(err));
+    }
+  };
 
   return (
     <>
@@ -69,7 +75,7 @@ function RegisterPage() {
           </p>
           <button
             className=" rounded-lg mt-5 text-white bg-[#4F46E5] h-16"
-            // onClick={mendaftar}
+            onClick={mendaftar}
           >
             Mendaftar
           </button>
