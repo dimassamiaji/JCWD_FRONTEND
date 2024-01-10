@@ -17,9 +17,10 @@ const userSlice = createSlice({
       };
     },
     functionLogout: (state) => {
+      localStorage.removeItem("user");
       return initialState;
     },
-  },
+  },  
 });
 
 export const { functionLogin, functionLogout } = userSlice.actions;
