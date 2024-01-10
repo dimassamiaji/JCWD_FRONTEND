@@ -58,6 +58,10 @@ function LoginPage() {
             className=" px-2 bg-[#F3F4F6] rounded-lg min-h-[40px]"
             placeholder="**************"
             id="password"
+            onKeyPress={(e) => {
+              console.log(e.key);
+              if (e.key == "Enter") login();
+            }}
           ></input>
 
           <button

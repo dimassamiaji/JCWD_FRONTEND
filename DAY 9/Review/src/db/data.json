@@ -23,6 +23,12 @@
       "name": "dims",
       "email": "dims@gmail.com",
       "password": "123"
+    },
+    {
+      "id": "5e5b",
+      "name": "cupetong",
+      "email": "cupetong@gmail.com",
+      "password": "123456"
     }
   ]
 }
