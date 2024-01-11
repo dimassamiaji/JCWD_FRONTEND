@@ -12,13 +12,18 @@ function NavbarComponent() {
   return (
     <div className=" flex justify-between p-7 pb-4 border-b-2 border-gray-400">
       {/* logo */}
-      <div className=" font-bold text-2xl text-red-400">Logo</div>
+      <button className=" font-bold text-2xl text-black">Kick Avenue</button>
+      <input
+        onChange={(e) => setSearch(e.target.value)}
+        type="text"
+        placeholder="Type any products here"
+      />
 
       {/* menu */}
       <div className=" flex gap-4 font-semibold">
-        <div>Home</div>
-        <div>Service</div>
-        <div>Contact</div>
+        <button>Home</button>
+        <button>Service</button>
+        <button>Contact Us</button>
       </div>
 
       {/*login & register*/}

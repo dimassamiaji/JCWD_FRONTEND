@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import HomePage from "../pages/auth/home";
 import LoginPage from "../pages/auth/login";
 import RegisterPage from "../pages/auth/register";
+import DetailPage from "../pages/auth/detail";
 
 function ProtectedPage({ children, userOnly, guestOnly }) {
   const userSelector = useSelector((state) => state.auth);
@@ -39,6 +40,8 @@ class RouteClass {
 
 export const routes = [
   new RouteClass("/", <HomePage />),
+  new RouteClass("/product/:id", <DetailPage />, true),
+
   new RouteClass("/login", <LoginPage />, false, true),
   new RouteClass("/register", <RegisterPage />, false, true),
 ];
