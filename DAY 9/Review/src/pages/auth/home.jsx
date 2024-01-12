@@ -20,10 +20,12 @@ function HomePage() {
   return (
     <>
       <NavbarComponent />
-      <div className=" grid grid-cols-4">
-        {products.map((product, key) => (
-          <CardComponent {...product} key={key} />
-        ))}
+      <div className="md:px-20 w-full">
+        <div className=" grid grid-cols-1 lg:items-center md:grid-cols-2 lg:grid-cols-3 w-full gap-5">
+          {products.map((product, key) => (
+            <CardComponent {...product} key={key} />
+          ))}
+        </div>
       </div>
     </>
   );

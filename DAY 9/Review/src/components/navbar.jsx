@@ -13,11 +13,11 @@ function NavbarComponent() {
     <div className=" flex justify-between p-7 pb-4 border-b-2 border-gray-400">
       {/* logo */}
       <button className=" font-bold text-2xl text-black">Kick Avenue</button>
-      <input
+      {/* <input
         onChange={(e) => setSearch(e.target.value)}
         type="text"
         placeholder="Type any products here"
-      />
+      /> */}
 
       {/* menu */}
       <div className=" flex gap-4 font-semibold">
