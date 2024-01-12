@@ -17,9 +17,9 @@ function DetailPage() {
     if (id) fetchById();
     console.log(id);
   }, [id]);
-  useEffect(() => {
-    console.log(data);
-  }, []);
+  // useEffect(() => {
+  //   console.log(data);
+  // }, []);
   return (
     <>
       <NavbarComponent />
