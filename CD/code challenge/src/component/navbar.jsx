@@ -1,49 +1,30 @@
-function NavbarComponents() {
+import img from "../assets/Gojek_Logo.png";
+
+function NavbarProfile() {
   return (
-    <div className=" flex justify-between p-7 pb-4 border-b-2 border-gray-400">
-      {/* logo */}
-      <button className=" font-bold text-2xl text-black">Kick Avenue</button>
-      {/* <input
-        onChange={(e) => setSearch(e.target.value)}
-        type="text"
-        placeholder="Type any products here"
-      /> */}
-
-      {/* menu */}
-      <div className=" flex gap-4 font-semibold">
-        <button>Home</button>
-        <button>Service</button>
-        <button>Contact Us</button>
-      </div>
-
-      {/* login & register
-      {userSelector?.id ? (
-        <button className=" flex gap-3">
-          <div>Welcome, {userSelector?.name}</div>
-          <div
-            className=" px-2 rounded-md border-gray-500 border"
-            onClick={logout}
-          >
-            Logout
-          </div>
-        </button>
-      ) : (
-        <div className=" flex gap-3">
-          <Link
-            className=" px-2 rounded-md border-gray-500 border"
-            to={"/login"}
-          >
-            Login
-          </Link>
-          <Link
-            className=" px-2 rounded-md border-gray-500 border"
-            to={"/register"}
-          >
-            Register
-          </Link>
+    <nav className=" bg-transparent p-5 fixed w-full z-10">
+      <div className="container mx-auto flex justify-between items-center">
+        <div className="flex flex-col items-center">
+          <img src={img} alt="" className=" w-44" />
         </div>
-      )} */}
-    </div>
+
+        <div className="flex items-center space-x-4">
+          <a href="#" className="text-white">
+            Home
+          </a>
+          <a href="#" className="text-white">
+            About Us
+          </a>
+          <a href="#" className="text-white">
+            Services
+          </a>
+          <a href="#" className="text-white">
+            EN
+          </a>
+        </div>
+      </div>
+    </nav>
   );
 }
-export default NavbarComponents;
+
+export default NavbarProfile;

@@ -3,13 +3,14 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import NavbarComponents from "./component/navbar";
+import NavbarProfile from "./component/navbar";
+import HomePage from "./pages/home";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <NavbarComponents />
+      {/* <NavbarProfile /> */}
+      <HomePage />
     </>
   );
 }
