@@ -37,7 +37,7 @@ function HomePage() {
       </div>
 
       <div className=" bg-[#101820] pt-10 pb-10">
-        <div className="">
+        <div className=" relative hidden  ">
           <div className="absolute bg-white "></div>
           <div className="container grid grid-cols-1 sm:grid-cols-4 text-center relative z-20"></div>
         </div>
