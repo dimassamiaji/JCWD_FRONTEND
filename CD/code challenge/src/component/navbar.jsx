@@ -1,4 +1,5 @@
 import img from "../assets/Gojek_Logo.png";
+import { Link } from "react-router-dom";
 
 function NavbarProfile() {
   return (
@@ -17,6 +18,9 @@ function NavbarProfile() {
           </a>
           <a href="#" className="text-white">
             Services
+          </a>
+          <a href="#" className="text-white">
+            Teams
           </a>
           <a href="#" className="text-white">
             EN

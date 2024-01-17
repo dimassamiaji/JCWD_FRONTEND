@@ -36,11 +36,25 @@ function HomePage() {
         </div>
       </div>
 
-      <div className=" bg-[#101820] pt-10 pb-10">
-        <div className=" relative hidden  ">
-          <div className="absolute bg-white "></div>
-          <div className="container grid grid-cols-1 sm:grid-cols-4 text-center relative z-20"></div>
-        </div>
+      <div className=" bg-[#101820]">
+        {/* <div className="relative hidden lg:block">
+          <div className="absolute bg-white rounded-t-[40px]"></div>
+
+          <div className="container grid grid-cols-1 sm:grid-cols-4 text-center relative z-20">
+            <div className="flex flex-col items-center p-5">
+              <img src="img2" alt="" className="w-20" />
+            </div>
+            <div className="flex flex-col items-center p-5">
+              <img src="img2" alt="" className="w-50" />
+            </div>
+            <div className="flex flex-col items-center p-5">
+              <img src="img2" alt="" className="w-50" />
+            </div>
+            <div className="flex flex-col items-center p-5">
+              <img src="img2" alt="" className="w-50" />
+            </div>
+          </div>
+        </div> */}
       </div>
 
       {/* Products*/}
