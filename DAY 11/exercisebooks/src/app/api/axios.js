@@ -5,9 +5,3 @@ export const axiosInstance = () => {
     baseURL: "http://localhost:2000",
   });
 };
-
-//api crud
-//nambahin product
-//edit product
-
-//api key, user role , dll

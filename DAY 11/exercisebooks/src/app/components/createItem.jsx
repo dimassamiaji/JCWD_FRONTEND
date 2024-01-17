@@ -1,9 +1,9 @@
 import { axiosInstance } from "../api/axios";
 
-function CreateCompo({ book, setBook, a }) {
+function CreateComponent({ book, setBook, a }) {
   return (
     <div className=" w-1/4 my-4">
-      <form id="formnih">
+      <form id="form">
         <input
           type="text"
           placeholder="Book Name"
@@ -27,7 +27,7 @@ function CreateCompo({ book, setBook, a }) {
     </div>
   );
 }
-export default CreateCompo;
+export default CreateComponent;
 
 function createBook(event, a) {
   event.preventDefault();
@@ -45,6 +45,6 @@ function createBook(event, a) {
     })
     .catch((err) => console.log(err))
     .finally(() => {
-      document.getElementById("formnih").reset();
+      document.getElementById("form").reset();
     });
 }

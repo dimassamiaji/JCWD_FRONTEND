@@ -18,7 +18,7 @@ function LoopItem({ id, name, author, price, a }) {
           </button>
           <button
             className=" bg-red-600 px-4 py-2"
-            onClick={() => deleteNih(id, a)}
+            onClick={() => delete (id, a)}
           >
             Delete
           </button>
@@ -40,7 +40,7 @@ function LoopItem({ id, name, author, price, a }) {
         <td className="text-center">
           <button
             className=" bg-green-600 px-4 py-2 mx-5 "
-            onClick={() => editNih(id, edit, setEdit, a)}
+            onClick={() => edit(id, edit, setEdit, a)}
           >
             Edit
           </button>

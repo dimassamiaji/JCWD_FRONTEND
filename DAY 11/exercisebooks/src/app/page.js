@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { axiosInstance } from "./api/axios";
 import LoopItem from "./components/loopItem";
 import Link from "next/link";
-import CreateCompo from "./components/createItem";
+import CreateComponent from "./components/createItem";
 
 export default function Home() {
   const [book, setBook] = useState([]);
@@ -32,7 +32,7 @@ export default function Home() {
           <LoopItem key={val.id} {...val} a={a} />
         ))}
       </table>
-      <CreateCompo book={book} setBook={setBook} a={a} />
+      <CreateComponent book={book} setBook={setBook} a={a} />
     </>
   );
 }
