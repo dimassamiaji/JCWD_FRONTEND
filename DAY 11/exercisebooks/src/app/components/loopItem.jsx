@@ -18,7 +18,7 @@ function LoopItem({ id, name, author, price, a }) {
           </button>
           <button
             className=" bg-red-600 px-4 py-2"
-            onClick={() => delete (id, a)}
+            onClick={() => deleteNow (id, a)}
           >
             Delete
           </button>
@@ -40,7 +40,7 @@ function LoopItem({ id, name, author, price, a }) {
         <td className="text-center">
           <button
             className=" bg-slate-500 px-4 py-2 mx-5 "
-            onClick={() => edit(id, edit, setEdit, a)}
+            onClick={() => editNow(id, edit, setEdit, a)}
           >
             Edit
           </button>
@@ -55,7 +55,7 @@ function LoopItem({ id, name, author, price, a }) {
     );
   }
 }
-function editNih(id, edit, setEdit, a) {
+function editNow(id, edit, setEdit, a) {
   const name = document.getElementById("name").value;
   const author = document.getElementById("author").value;
   const price = document.getElementById("price").value;
@@ -73,7 +73,7 @@ function editNih(id, edit, setEdit, a) {
       setEdit(false);
     });
 }
-function deleteNih(id, a) {
+function deleteNow(id, a) {
   axiosInstance()
     .delete("/books/" + id)
     .then((res) => {
