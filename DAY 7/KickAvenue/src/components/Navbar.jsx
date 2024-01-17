@@ -1,6 +1,6 @@
 import Search from "../assets/search.png";
-import Logo from "../assets/Logo.png";
-import { useState } from "react";
+import Logo from "../assets/logo.png";
+// import { useState } from "react";
 function NavbarComponent({ setSearch }) {
   return (
     <nav>

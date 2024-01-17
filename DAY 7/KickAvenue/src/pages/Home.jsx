@@ -1,3 +1,4 @@
+/** @format */
 import { products } from "../database/data.json";
 import { useState, useEffect } from "react";
 import CardListComponents from "../components/Cardlist";
@@ -10,7 +11,7 @@ function HomePage() {
   const [search, setSearch] = useState("");
 
   const filter = () => {
-    console.log(data);
+    // console.log(data);
     const filtered = data.filter((product) =>
       product.productName.toLowerCase().includes(search.toLowerCase())
     );

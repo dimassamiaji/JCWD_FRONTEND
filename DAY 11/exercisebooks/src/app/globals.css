@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+table,
+tr,
+td,
+th {
+  border: 1px solid black;
+}
+input {
+  border: 1px solid black;
+  width: 100%;
+}
+button {
+  color: white;
+}
+td {
+  width: 200px;
+  padding: 10px;
+}

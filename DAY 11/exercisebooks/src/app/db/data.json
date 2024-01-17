@@ -1,0 +1,22 @@
+{
+  "books": [
+    {
+      "id": "1",
+      "name": "One Piece",
+      "price": "30000",
+      "author": "Eichiro Oda"
+    },
+    {
+      "id": "2",
+      "name": " A Game of Thrones",
+      "price": "200000",
+      "author": "George R. R. Martin"
+    },
+    {
+      "id": "3",
+      "name": "Fantastic Beast and Where to Find Them",
+      "price": "300000",
+      "author": "J.K.Rowling"
+    }
+  ]
+}
