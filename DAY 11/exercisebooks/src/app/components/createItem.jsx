@@ -18,7 +18,7 @@ function CreateComponent({ book, setBook, a }) {
         />
         <input type="text" placeholder="Price" className="my-2" id="cprice" />
         <button
-          className=" bg-yellow-600 px-4 py-2 my-2"
+          className=" bg-blue-400 px-4 py-2 my-2"
           onClick={(e) => createBook(e, a)}
         >
           Add

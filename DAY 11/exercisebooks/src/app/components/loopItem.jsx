@@ -11,7 +11,7 @@ function LoopItem({ id, name, author, price, a }) {
         <td>IDR {Number(price)?.toLocaleString("id-ID")}</td>
         <td className="text-center">
           <button
-            className=" bg-green-600 px-4 py-2 mx-5"
+            className=" bg-slate-500 px-4 py-2 mx-5"
             onClick={() => setEdit(!edit)}
           >
             Edit
@@ -39,7 +39,7 @@ function LoopItem({ id, name, author, price, a }) {
         </td>
         <td className="text-center">
           <button
-            className=" bg-green-600 px-4 py-2 mx-5 "
+            className=" bg-slate-500 px-4 py-2 mx-5 "
             onClick={() => edit(id, edit, setEdit, a)}
           >
             Edit
