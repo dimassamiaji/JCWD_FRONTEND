@@ -1,0 +1,22 @@
+export const SliderData = [
+  {
+    image:
+      "https://zurich.swissphotoclub.com/wp-content/uploads/2019/06/Matterhorn-Stellisee-I-1.jpg",
+  },
+  {
+    image:
+      "https://www.treehugger.com/thmb/ifuEx0MOjhfNU2jHtMisIpy1NUQ=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/__opt__aboutcom__coeus__resources__content_migration__mnn__images__2018__06__nature-phpoto-day-squirrel-6b50719b524c4ecbb3152a32baa38367.jpg",
+  },
+  {
+    image:
+      "https://static.nationalgeographic.co.uk/files/styles/image_3200/public/croppedgettyimages-1396812211.webp?w=1450&h=816",
+  },
+  {
+    image:
+      "https://www.pixelstalk.net/wp-content/uploads/2016/08/Camera-Best-Photography-Images.jpg",
+  },
+  {
+    image:
+      "https://i0.wp.com/prowly-uploads.s3.eu-west-1.amazonaws.com/uploads/8254/assets/187806/large-6e2b906f7ed67adf4c3491ba95d04e12.jpg?resize=780%2C509&ssl=1",
+  },
+];
