@@ -9,22 +9,11 @@ function NavbarProfile() {
           <img src={img} alt="" className=" w-44" />
         </div>
 
-        <div className="flex items-center space-x-4">
-          <a href="#" className="text-white">
-            Home
-          </a>
-          <a href="#" className="text-white">
-            About Us
-          </a>
-          <a href="#" className="text-white">
-            Services
-          </a>
-          <a href="#" className="text-white">
-            Teams
-          </a>
-          <a href="#" className="text-white">
-            EN
-          </a>
+        <div className="flex items-center space-x-4 text-white">
+          <Link to={"/Home"}>Home</Link>
+          <Link to={"/About"}>About Us</Link>
+          <Link to={"/Services"}>Services</Link>
+          <Link to={"/Teams"}>Teams</Link>
         </div>
       </div>
     </nav>

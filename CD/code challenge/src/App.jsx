@@ -2,17 +2,23 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
-import NavbarComponents from "./component/navbar";
-import NavbarProfile from "./component/navbar";
-import HomePage from "./pages/home";
-import AboutUsPage from "./pages/About us";
+import NavbarProfile from "./component/Navbar";
+import HomePage from "./component/Home";
+import AboutPage from "./component/About";
+import ServicesPage from "./component/Services";
+import TeamsPage from "./component/Teams";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <>
-      {/* <NavbarProfile /> */}
-      <HomePage />
-      <AboutUsPage />
+      <NavbarProfile />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/About" element={<AboutPage />} />
+        <Route path="/Services" element={<ServicesPage />} />
+        <Route path="Teams" element={<TeamsPage />} />
+      </Routes>
     </>
   );
 }

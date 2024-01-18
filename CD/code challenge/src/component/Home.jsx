@@ -1,14 +1,9 @@
-import NavbarProfile from "../component/navbar";
-import NavbarComponents from "../component/navbar";
 import img from "../assets/imgcity2.jpg";
 import img2 from "../assets/Logo_White.png";
-import img3 from "../assets/goride_1.png";
 
 function HomePage() {
   return (
     <>
-      <NavbarProfile />
-      {/* banner*/}
       <div className="">
         <div className="w-full h-screen overflow-hidden bg-dark200 relative lg:h-auto lg:aspect-video">
           <img src={img} alt="" className=" w-full" />
