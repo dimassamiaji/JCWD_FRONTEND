@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import Image from "next/image";
 
 function NavbarComponents() {
   const [nav, setNav] = useState(false);
@@ -32,9 +33,15 @@ function NavbarComponents() {
     >
       <div className="max-w-[1240px] m-auto flex justify-between items-center p-4 text-white">
         <Link href={"/"}>
-          <h1 style={{ color: `${textColor}` }} className="font-bold text-4xl">
-            Captur
-          </h1>
+          <Image
+            src="/images/Black and White Simple Photography Logo.png"
+            alt=""
+            width="100" // Sesuaikan lebar sesuai kebutuhan
+            height="40" // Sesuaikan tinggi sesuai kebutuhan
+          />
+          {/* <h1 style={{ color: `${textColor}` }} className="font-bold text-4xl">
+            Capshut.
+          </h1> */}
         </Link>
         <ul style={{ color: `${textColor}` }} className="hidden sm:flex">
           <li className="p-4">

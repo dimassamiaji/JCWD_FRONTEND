@@ -8,10 +8,9 @@ function SliderPage({ slides }) {
   const [current, setCurrent] = useState(0);
   const length = slides.length;
 
-  const nextSLide = () => {
+  const nextSlide = () => {
     setCurrent(current === length - 1 ? 0 : current + 1);
   };
-
   const prevSlide = () => {
     setCurrent(current === 0 ? length - 1 : current - 1);
   };
@@ -40,16 +39,16 @@ function SliderPage({ slides }) {
                 size={50}
               />
               {index === current && (
-                <img
+                <Image
                   src={slide.image}
                   alt="/"
                   width="1440"
                   height="600"
-                  objectfit="cover"
+                  objectFit="cover"
                 />
               )}
               <FaArrowCircleRight
-                onClick={nextSLide}
+                onClick={nextSlide}
                 className="absolute top-[50%] right-[30px] text-white/70 cursor-pointer select-none z-[2]"
                 size={50}
               />
