@@ -4,6 +4,7 @@ import Link from "next/link";
 import HeroPage from "./components/Hero";
 import SliderPage from "./components/Slider";
 import { SliderData } from "./components/SliderData";
+import InstagramPage from "./components/Instagram";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         message="I capture moments in nature and keep them alive."
       />
       <SliderPage slides={SliderData} />
+      <InstagramPage />
     </div>
   );
 }

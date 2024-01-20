@@ -34,8 +34,8 @@ function NavbarComponents() {
       <div className="max-w-[1240px] m-auto flex justify-between items-center p-4 text-white">
         <Link href={"/"}>
           <Image
-            src="/images/Black and White Simple Photography Logo.png"
-            alt=""
+            src="/images/Logo.png"
+            alt="Logo Perusahaan"
             width="100" // Sesuaikan lebar sesuai kebutuhan
             height="40" // Sesuaikan tinggi sesuai kebutuhan
           />

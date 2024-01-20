@@ -1,6 +1,10 @@
-
-
-
+import IgImg1 from "../";
+import IgImg2 from "next/image";
+import IgImg3 from "next/image";
+import IgImg4 from "next/image";
+import IgImg5 from "next/image";
+import IgImg6 from "next/image";
+import InstagramImg from "./InstagramImg";
 
 function InstagramPage() {
   return (
