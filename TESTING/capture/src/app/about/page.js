@@ -6,7 +6,7 @@ import WeddingImg from "../../public/Wedding1.jpg";
 function About() {
   return (
     <div>
-      <Hero heading="About Us" />
+      <Hero heading="About Us" message="test" />
       <div className="container mx-auto mt-8 p-4 md:p-8">
         <div className="text-gray-800 leading-relaxed">
           <p className="mb-4">
@@ -17,12 +17,6 @@ function About() {
             At our core, we believe in innovation, collaboration, and customer
             satisfaction. Our goal is to make a positive impact through
             cutting-edge technologies and exceptional customer service.
-          </p>
-          <p className="mt-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
           </p>
         </div>
       </div>
