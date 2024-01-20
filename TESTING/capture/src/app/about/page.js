@@ -1,4 +1,13 @@
-function AboutPage() {
-  return <div>here </div>;
+import Hero from "../components/Hero";
+
+function About() {
+  return (
+    <div>
+      <Hero
+        heading="About"
+        message="Submit the form below for more work and quotes."
+      />
+    </div>
+  );
 }
-export default AboutPage;
+export default About;
