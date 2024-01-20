@@ -1,4 +1,4 @@
-function TeamsPage() {
+function Teams() {
   return (
     <div className="max-w-[1240px] m-auto p-4 h-screen">
       <h1 className="text-2xl font-bold text-center p-4">
@@ -33,4 +33,4 @@ function TeamsPage() {
     </div>
   );
 }
-export default TeamsPage;
+export default Teams;

@@ -32,29 +32,29 @@ function NavbarComponents() {
       className="fixed left-0 top-0 w-full z-10 ease-in duration-300"
     >
       <div className="max-w-[1240px] m-auto flex justify-between items-center p-4 text-white">
-        <Link href={"/"}>
-          <Image
+        <Link href="/">
+          {/* <Image
             src="/images/Logo.png"
             alt="Logo Perusahaan"
             width="100" // Sesuaikan lebar sesuai kebutuhan
             height="40" // Sesuaikan tinggi sesuai kebutuhan
-          />
-          {/* <h1 style={{ color: `${textColor}` }} className="font-bold text-4xl">
+          /> */}
+          <h1 style={{ color: `${textColor}` }} className="font-bold text-4xl">
             Capshut.
-          </h1> */}
+          </h1>
         </Link>
         <ul style={{ color: `${textColor}` }} className="hidden sm:flex">
           <li className="p-4">
-            <Link href={"/"}>Home</Link>
+            <Link href="/">Home</Link>
           </li>
           <li className="p-4">
-            <Link href={"/about us"}>About Us</Link>
+            <Link href="/about">About Us</Link>
           </li>
           <li className="p-4">
-            <Link href={"/portofolio"}>Work</Link>
+            <Link href="/work">Work</Link>
           </li>
           <li className="p-4">
-            <Link href={"/teams"}>Teams</Link>
+            <Link href="/teams">Teams</Link>
           </li>
         </ul>
 
@@ -76,16 +76,16 @@ function NavbarComponents() {
         >
           <ul>
             <li className="p-4 text-4xl hover:text-gray-500">
-              <Link href={"/"}>Home</Link>
+              <Link href="/">Home</Link>
             </li>
             <li className="p-4 text-4xl hover:text-gray-500">
-              <Link href={"/about us"}>About Us</Link>
+              <Link href="/about">About Us</Link>
             </li>
             <li className="p-4 text-4xl hover:text-gray-500">
-              <Link href={"/portofolio"}>Work</Link>
+              <Link href="/work">Work</Link>
             </li>
             <li className="p-4 text-4xl hover:text-gray-500">
-              <Link href={"/teams"}>Teams</Link>
+              <Link href="/teams">Teams</Link>
             </li>
           </ul>
         </div>

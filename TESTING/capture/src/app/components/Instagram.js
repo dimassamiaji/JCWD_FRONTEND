@@ -1,9 +1,9 @@
-import IgImg1 from "../";
-import IgImg2 from "next/image";
-import IgImg3 from "next/image";
-import IgImg4 from "next/image";
-import IgImg5 from "next/image";
-import IgImg6 from "next/image";
+import IgImg1 from "../../public/IgImg1.jpeg";
+import IgImg2 from "../../public/IgImg2.jpeg";
+import IgImg3 from "../../public/IgImg3.jpeg";
+import IgImg4 from "../../public/IgImg4.jpeg";
+import IgImg5 from "../../public/IgImg5.jpeg";
+import IgImg6 from "../../public/IgImg6.jpeg";
 import InstagramImg from "./InstagramImg";
 
 function InstagramPage() {
