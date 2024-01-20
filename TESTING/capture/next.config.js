@@ -9,6 +9,7 @@ module.exports = {
       "static.nationalgeographic.co.uk",
       "www.pixelstalk.net",
       "i0.wp.com",
+      "images.unsplash.com",
     ],
   },
 };

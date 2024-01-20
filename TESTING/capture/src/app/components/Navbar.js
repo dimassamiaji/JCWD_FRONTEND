@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import Image from "next/image";
+import Logo from "../../public/Logo2.png";
 
 function NavbarComponents() {
   const [nav, setNav] = useState(false);
@@ -33,27 +34,27 @@ function NavbarComponents() {
     >
       <div className="max-w-[1240px] m-auto flex justify-between items-center p-4 text-white">
         <Link href="/">
-          {/* <Image
-            src="/images/Logo.png"
+          <Image
+            src={Logo}
             alt="Logo Perusahaan"
-            width="100" // Sesuaikan lebar sesuai kebutuhan
-            height="40" // Sesuaikan tinggi sesuai kebutuhan
-          /> */}
-          <h1 style={{ color: `${textColor}` }} className="font-bold text-4xl">
+            width={100} // Sesuaikan lebar sesuai kebutuhan
+            height={40} // Sesuaikan tinggi sesuai kebutuhan
+          />
+          {/* <h1 style={{ color: `${textColor}` }} className="font-bold text-4xl">
             Capshut.
-          </h1>
+          </h1> */}
         </Link>
         <ul style={{ color: `${textColor}` }} className="hidden sm:flex">
-          <li className="p-4">
+          <li className="hover:underline p-4">
             <Link href="/">Home</Link>
           </li>
-          <li className="p-4">
+          <li className="hover:underline p-4">
             <Link href="/about">About Us</Link>
           </li>
-          <li className="p-4">
+          <li className="hover:underline p-4">
             <Link href="/work">Work</Link>
           </li>
-          <li className="p-4">
+          <li className="hover:underline p-4">
             <Link href="/teams">Teams</Link>
           </li>
         </ul>
@@ -75,16 +76,16 @@ function NavbarComponents() {
           }
         >
           <ul>
-            <li className="p-4 text-4xl hover:text-gray-500">
+            <li className="hover:underline p-4 text-4xl hover:text-gray-500">
               <Link href="/">Home</Link>
             </li>
-            <li className="p-4 text-4xl hover:text-gray-500">
+            <li className="hover:underline p-4 text-4xl hover:text-gray-500">
               <Link href="/about">About Us</Link>
             </li>
-            <li className="p-4 text-4xl hover:text-gray-500">
+            <li className="hover:underline p-4 text-4xl hover:text-gray-500">
               <Link href="/work">Work</Link>
             </li>
-            <li className="p-4 text-4xl hover:text-gray-500">
+            <li className="hover:underline p-4 text-4xl hover:text-gray-500">
               <Link href="/teams">Teams</Link>
             </li>
           </ul>

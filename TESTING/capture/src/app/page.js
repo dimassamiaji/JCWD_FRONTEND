@@ -5,6 +5,7 @@ import HeroPage from "./components/Hero";
 import SliderPage from "./components/Slider";
 import { SliderData } from "./components/SliderData";
 import InstagramPage from "./components/Instagram";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -15,11 +16,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <HeroPage
-        heading="Captur Photography"
-        message="I capture moments in nature and keep them alive."
+        heading="Capture Photography"
+        message="We are capture moments in nature and keep them alive."
       />
       <SliderPage slides={SliderData} />
       <InstagramPage />
+      <Footer />
     </div>
   );
 }

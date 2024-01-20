@@ -10,3 +10,7 @@ html {
 .custom-img {
   background-image: url(https://wallpapercave.com/wp/wp4991569.jpg);
 }
+
+body {
+  font-family: "Roboto", sans-serif;
+}
