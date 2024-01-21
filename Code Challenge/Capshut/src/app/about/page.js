@@ -11,17 +11,22 @@ import { FaInstagram } from "react-icons/fa";
 function About() {
   return (
     <div>
-      <Hero heading="About Us" />
+      <Hero heading="About Us" message="We’re Picture Perfect Photography." />
       <div className="container mx-auto mt-8 p-4 md:p-8 text-center ">
         <div className="text-gray-800 leading-relaxed">
           <p className="mb-4">
-            Welcome to our company! We are a passionate team dedicated to
-            delivering high-quality products and services to our clients.
+            We are a creative photography studio that provides you with more
+            than just an image. Our mission is to bring your vision to life,
+            working closely with companies and individuals to produce creative
+            specialist images.
           </p>
           <p className="mb-4">
-            At our core, we believe in innovation, collaboration, and customer
-            satisfaction. Our goal is to make a positive impact through
-            cutting-edge technologies and exceptional customer service.
+            Tailoring our services to your business needs, actively encouraging
+            clients to find their photoshoot goals through planning, and our
+            creative strategy sessions to help create a powerful visual
+            narrative using creative and bold photography and editing techniques
+            to make you or your business shine.
+            <strong></strong>
           </p>
         </div>
       </div>

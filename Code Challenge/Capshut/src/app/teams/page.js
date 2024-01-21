@@ -12,7 +12,7 @@ function teams() {
     <div>
       <Hero
         heading="Meet The Team"
-        message="Our team brings a wealth of experience from some of the world's most formidable Photography Studios and Startups."
+        message="Our team brings a wealth of experience."
       />
       <div className="mx-auto py-20 px-8">
         <div className="grid lg:grid-cols-3 gap-6">
