@@ -6,6 +6,9 @@ import SliderPage from "./components/Slider";
 import { SliderData } from "./components/SliderData";
 import InstagramPage from "./components/Instagram";
 import Footer from "./components/Footer";
+import TestimonialSlider from "./components/TestimonialSlider";
+import Product from "./work/Traveling&Outdoor/Product";
+import ProductCard from "./work/Traveling&Outdoor/ProductCard";
 
 export default function Home() {
   return (
@@ -20,6 +23,8 @@ export default function Home() {
         message="We are capture moments in nature and keep them alive."
       />
       <SliderPage slides={SliderData} />
+      <Product />
+      <TestimonialSlider />
       <InstagramPage />
       <Footer />
     </div>

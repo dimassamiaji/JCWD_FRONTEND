@@ -10,6 +10,7 @@ module.exports = {
       "www.pixelstalk.net",
       "i0.wp.com",
       "images.unsplash.com",
+      "sociabuzz.s3.ap-southeast-1.amazonaws.com",
     ],
   },
 };

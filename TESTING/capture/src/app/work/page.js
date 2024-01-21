@@ -6,8 +6,8 @@ function Work() {
   return (
     <div>
       <Hero
-        heading="My Work"
-        message="This is some of my recent work traveling the world."
+        heading="Our Capture"
+        message="This is some of our recent work traveling the world."
       />
       <Portfolio />
       <Footer />
